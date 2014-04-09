@@ -1,8 +1,8 @@
 # ![](https://gravatar.com/avatar/11d3bc4c3163e3d238d558d5c9d98efe?s=64) aptible/nodejs
 
-[![Docker Repository on Quay.io](https://quay.io/repository/aptible/nodejs/status "Docker Repository on Quay.io")](https://quay.io/repository/aptible/nodejs)
+[![Docker Repository on Quay.io](https://quay.io/repository/aptible/nodejs/status)](https://quay.io/repository/aptible/nodejs)
 
-Multiple Node.js versions, on top of Ubuntu 12.10.
+Node.js on Docker.
 
 ## Installation and Usage
 
