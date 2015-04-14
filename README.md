@@ -11,8 +11,9 @@ Node.js on Docker.
 
 ## Available Tags
 
-* `latest`: Currently Node.js v0.10.26
-* `v0.10.x`: Node.js v0.10.26
+* `latest`: Currently Node.js v0.12.2
+* `v0.12.x`: Node.js v0.12.2
+* `v0.10.x`: Node.js v0.10.38
 
 ## Tests
 
