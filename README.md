@@ -11,8 +11,8 @@ Node.js on Docker.
 
 ## Available Tags
 
-* `latest`: Currently Node.js v4.2.4
-* `v4.2.x`: Node.js v4.2.4
+* `latest`: Currently Node.js v4.2.6
+* `v4.2.x`: Node.js v4.2.6
 * `v0.12.x`: Node.js v0.12.9
 * `v0.10.x`: Node.js v0.10.41
 
