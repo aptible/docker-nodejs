@@ -14,7 +14,7 @@ Node.js on Docker.
 * `latest`: Currently Node.js v4.2.6
 * `v4.2.x`: Node.js v4.2.6
 * `v0.12.x`: Node.js v0.12.9
-* `v0.10.x`: Node.js v0.10.41
+* `v0.10.x`: Node.js v0.10.42
 
 ## Tests
 
