@@ -11,10 +11,11 @@ Node.js on Docker.
 
 ## Available Tags
 
-* `v4.3.x`: Node.js v4.3.1
+* `v4.4.x`: Node.js v4.4.0
+* `v4.3.x`: Node.js v4.3.2
 * `v4.2.x`: Node.js v4.2.6
-* `v0.12.x`: Node.js v0.12.10
-* `v0.10.x`: Node.js v0.10.42
+* `v0.12.x`: Node.js v0.12.12
+* `v0.10.x`: Node.js v0.10.43
 
 ## Tests
 
