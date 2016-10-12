@@ -1,12 +1,12 @@
 FROM quay.io/aptible/debian:wheezy
 
 WORKDIR /tmp
-RUN wget -q http://nodejs.org/dist/v0.10.47/node-v0.10.47-linux-x64.tar.gz && \
-    tar xzf node-v0.10.47* && cd node-v0.10.47* && \
+RUN wget -q http://nodejs.org/dist/v4.6.0/node-v4.6.0-linux-x64.tar.gz && \
+    tar xzf node-v4.6.0* && cd node-v4.6.0* && \
     mv bin/* /usr/local/bin/ && \
     mv lib/* /usr/local/lib/ && \
     mv include/* /usr/local/include/ && \
-    cd .. && rm -rf node-v0.10.47*
+    cd .. && rm -rf node-v4.6.0*
 WORKDIR /
 
 ADD test /tmp/test
