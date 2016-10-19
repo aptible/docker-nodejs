@@ -1,13 +1,19 @@
-FROM quay.io/aptible/debian:wheezy
+FROM node:6.9-alpine
 
-WORKDIR /tmp
-RUN wget -q http://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.gz && \
-    tar xzf node-v6.9.1* && cd node-v6.9.1* && \
-    mv bin/* /usr/local/bin/ && \
-    mv lib/* /usr/local/lib/ && \
-    mv include/* /usr/local/include/ && \
-    cd .. && rm -rf node-v6.9.1*
-WORKDIR /
+MAINTAINER Gaston Festari <gaston@pager.com>
 
-ADD test /tmp/test
-RUN bats /tmp/test
+RUN apk --no-cache add \
+  bash \
+  curl
+
+ENV NODE_ENV=production
+ENV DUMB_INIT_VERSION=1.2.0
+
+RUN curl -sSLo /usr/local/bin/dumb-init \
+  https://github.com/Yelp/dumb-init/releases/download/v${DUMB_INIT_VERSION}/dumb-init_${DUMB_INIT_VERSION}_amd64 && \
+  chmod +x /usr/local/bin/dumb-init
+
+ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
+
+USER node
+WORKDIR /home/node/app
