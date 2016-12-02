@@ -1,17 +1,17 @@
 # pagerinc/nodejs
 
-[![Docker Repository on Quay.io](https://quay.io/repository/aptible/nodejs/status)](https://quay.io/repository/aptible/nodejs)
+[![CircleCI](https://circleci.com/gh/pagerinc/docker-nodejs.svg?style=svg)](https://circleci.com/gh/pagerinc/docker-nodejs)
 
 Node.js on Docker.
 
 ## Installation and Usage
 
-    docker pull quay.io/aptible/nodejs
-    docker run quay.io/aptible/nodejs
+    docker pull pagerinc/nodejs
+    docker run pagerinc/nodejs
 
 ## Available Tags
 
-* `v6.9.x`: Node.js v6.9.1
+* `6.9`, `latest`: Node.js v6.9.1
 
 ## Tests
 
