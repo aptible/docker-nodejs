@@ -4,7 +4,8 @@ MAINTAINER Gaston Festari <gaston@pager.com>
 
 RUN apk --no-cache add \
   bash \
-  curl
+  curl \
+  python
 
 ENV NODE_ENV=production
 ENV DUMB_INIT_VERSION=1.2.0
