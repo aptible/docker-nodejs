@@ -5,6 +5,9 @@ MAINTAINER Gaston Festari <gaston@pager.com>
 RUN apk --no-cache add \
   bash \
   curl \
+  g++ \
+  gcc \
+  make \
   python
 
 ENV NODE_ENV=production
