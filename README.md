@@ -56,5 +56,4 @@ Containers built on this image will run as the unprivileged user `node`, providi
 
 ### Init System
 
-This image uses dumb-init as its entrypoint, dealing with issues such as [PID 1
-reaping problems](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/) for you, no configuration needed.
+This image uses [dumb-init](https://github.com/Yelp/dumb-init) as its entrypoint, dealing with issues such as [PID 1 reaping problems](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/) for you, no configuration needed.
