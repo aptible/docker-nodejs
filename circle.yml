@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t pagerinc/nodejs v6.9.x
+    - docker build --rm=false -t pagerinc/nodejs:latest -t pagerinc/nodejs:6.9 v6.9.x
 
 deployment:
   hub:
