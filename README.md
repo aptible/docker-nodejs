@@ -51,7 +51,7 @@ bats test
 
 ### Non-root User
 
-Containers built on this image will run as the unprivileged user `node`, providing a reduced attack surface.
+By default, Docker runs container as root which inside of the container can pose as a security issue. You would want to run the container as an unprivileged user wherever possible. This image provides the unprivileged `node` user for such purpose.
 
 
 ### Init System

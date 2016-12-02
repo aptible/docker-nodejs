@@ -18,6 +18,3 @@ RUN curl -sSLo /usr/local/bin/dumb-init \
   chmod +x /usr/local/bin/dumb-init
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
-
-USER node
-WORKDIR /home/node/app
