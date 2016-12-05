@@ -1,13 +1,8 @@
-DOCKER = docker
-TAGS = LTS v6.9.x
+BATS = bats
 
-all: release
+all: test
 
-release: $(TAGS)
-	$(DOCKER) push pagerinc/nodejs
+test:
+	$(BATS) test
 
-build: $(TAGS)
-
-.PHONY: $(TAGS)
-$(TAGS):
-	$(DOCKER) build -t pagerinc/nodejs:$@ $@
+.PHONY: test
