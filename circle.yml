@@ -20,4 +20,5 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push pagerinc/nodejs
+      - docker push pagerinc/nodejs:6.9
+      - docker push pagerinc/nodejs:latest
