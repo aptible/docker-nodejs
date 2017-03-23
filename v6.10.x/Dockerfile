@@ -1,7 +1,5 @@
 FROM node:6.10-alpine
 
-MAINTAINER Gaston Festari <gaston@pager.com>
-
 RUN apk --no-cache add \
   bash \
   curl \
