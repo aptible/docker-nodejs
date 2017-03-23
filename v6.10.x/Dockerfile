@@ -8,8 +8,8 @@ RUN apk --no-cache add \
   make \
   python
 
-ENV NODE_ENV=production
-ENV DUMB_INIT_VERSION=1.2.0
+ENV NODE_ENV=production \
+  DUMB_INIT_VERSION=1.2.0
 
 RUN curl -sSLo /usr/local/bin/dumb-init \
   https://github.com/Yelp/dumb-init/releases/download/v${DUMB_INIT_VERSION}/dumb-init_${DUMB_INIT_VERSION}_amd64 && \
