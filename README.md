@@ -1,4 +1,4 @@
-# pagerinc/nodejs
+# pagerinc/node
 
 [![CircleCI](https://circleci.com/gh/pagerinc/docker-nodejs.svg?style=svg)](https://circleci.com/gh/pagerinc/docker-nodejs)
 
@@ -17,8 +17,8 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 ## Installation and Usage
 
 ```
-docker pull pagerinc/nodejs
-docker run -it --rm pagerinc/nodejs node
+docker pull pagerinc/node
+docker run -it --rm pagerinc/node node
 ```
 
 
@@ -26,7 +26,7 @@ docker run -it --rm pagerinc/nodejs node
 
 Currently, this node image comes in LTS flavor, tailored towards a specific use case.
 
-* `6.9`, `latest`: Node.js v6.9.1
+* `6.10`, `latest`: Node.js v6.10.2
 
 
 ## Tests
@@ -42,7 +42,9 @@ bats test
 
 ### Environment Variables
 
-`NODE_ENV` is already set to `production` for you. Any other secrets and runtime configuration need to be passed in to your application as well.
+`NODE_ENV` is already set to `production` for you. Any other secrets and runtime configuration need to be passed in to your application as well. 
+
+eg:
 
 ```
 -e "NPM_CONFIG_LOGLEVEL=warn"
