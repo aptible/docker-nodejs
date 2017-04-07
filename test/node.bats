@@ -9,5 +9,5 @@
 }
 
 @test "It should use yarn v0.21.3" {
-  docker run --rm pagerinc/nodejs npm -v | grep 0.21.3
+  docker run --rm pagerinc/nodejs yarn --version | grep 0.21.3
 }
