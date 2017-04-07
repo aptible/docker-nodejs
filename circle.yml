@@ -9,16 +9,8 @@ dependencies:
     - sudo apt-get install -yq bats
   override:
     - docker info
-    - docker build --rm=false -t pagerinc/nodejs:latest -t pagerinc/nodejs:6.10 v6.10.x
+    - docker build --rm=false -t pagerinc/nodejs:latest 6.10
 
 test:
   override:
     - make test
-
-deployment:
-  hub:
-    branch: master
-    commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push pagerinc/nodejs:6.10
-      - docker push pagerinc/nodejs:latest
