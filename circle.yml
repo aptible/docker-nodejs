@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - sudo add-apt-repository ppa:duggan/bats -y
+    - sudo apt-get update
+    - sudo apt-get install -yq bats
+  override:
+    - docker info
+    - docker build --rm=false -t pagerinc/node:latest 6.11
+
+test:
+  override:
+    - make test
