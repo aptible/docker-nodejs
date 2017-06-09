@@ -9,7 +9,7 @@ dependencies:
     - sudo apt-get install -yq bats
   override:
     - docker info
-    - docker build --rm=false -t pagerinc/nodejs:latest 6.10
+    - docker build --rm=false -t pagerinc/node:latest 6.11
 
 test:
   override:

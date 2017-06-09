@@ -26,7 +26,7 @@ docker run -it --rm pagerinc/node node
 
 Currently, this node image comes in LTS flavor, tailored towards a specific use case.
 
-* `6.10`, `latest`: Node.js v6.10.2
+* `6.11`, `latest`: Node.js v6.11.0
 
 
 ## Tests
