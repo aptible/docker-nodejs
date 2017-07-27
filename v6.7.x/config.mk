@@ -1,0 +1,2 @@
+export NODE_VERSION = v6.7.0
+export NODE_SHA1SUM = abe81b4150917cdbbeebc6c6b85003b80c972d32c8f5dfd2970d32e52a6877af

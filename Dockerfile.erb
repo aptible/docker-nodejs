@@ -1,0 +1,19 @@
+FROM quay.io/aptible/debian:wheezy
+
+ENV NODE_VERSION="<%= ENV.fetch('NODE_VERSION') %>" \
+    NODE_SHA1SUM="<%= ENV.fetch('NODE_SHA1SUM') %>"
+
+RUN test "$(pwd)" = "/" && \
+    cd /tmp && \
+    wget -q "http://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.gz" && \
+    echo "${NODE_SHA1SUM}  node-${NODE_VERSION}-linux-x64.tar.gz" | sha256sum -c && \
+    tar xzf "node-${NODE_VERSION}-linux-x64.tar.gz" && cd "node-${NODE_VERSION}-linux-x64" && \
+    mv bin/* /usr/local/bin/ && \
+    mv lib/* /usr/local/lib/ && \
+    mv include/* /usr/local/include/ && \
+    cd .. && \
+    rm -r "node-${NODE_VERSION}-linux-x64" && \
+    rm "node-${NODE_VERSION}-linux-x64.tar.gz"
+
+ADD <%= ENV.fetch('TAG') %>/test /tmp/test
+RUN bats /tmp/test
