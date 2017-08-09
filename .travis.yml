@@ -21,6 +21,7 @@ env:
     - TAG=v6.7.x
     - TAG=v6.9.x
     - TAG=v8.1.x
+    - TAG=v8.2.x
 
 script:
   - make build
