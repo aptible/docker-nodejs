@@ -11,6 +11,7 @@ Node.js on Docker.
 
 ## Available Tags
 
+* `v8.2.x`: Node.js v8.2.1
 * `v8.1.x`: Node.js v8.1.4
 * `v6.11.x`: Node.js v6.11.1
 * `v6.9.x`: Node.js v6.9.5
