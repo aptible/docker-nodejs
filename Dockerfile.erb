@@ -1,5 +1,7 @@
 FROM quay.io/aptible/debian:wheezy
 
+ONBUILD RUN echo "All images based on Debian Wheezy are now deprecated. Please use the offical NodeJS Docker images instead.  See https://hub.docker.com/_/node/" && false
+
 ENV NODE_VERSION="<%= ENV.fetch('NODE_VERSION') %>" \
     NODE_SHA1SUM="<%= ENV.fetch('NODE_SHA1SUM') %>"
 

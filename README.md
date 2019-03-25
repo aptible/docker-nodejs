@@ -6,39 +6,11 @@ Node.js on Docker.
 
 ## Installation and Usage
 
-    docker pull quay.io/aptible/nodejs
-    docker run quay.io/aptible/nodejs
+This image is deprecated. Please use the [Official Docker Node image](https://hub.docker.com/_/node/) instead.
 
 ## Available Tags
 
-* `v8.2.x`: Node.js v8.2.1
-* `v8.1.x`: Node.js v8.1.4
-* `v6.11.x`: Node.js v6.11.1
-* `v6.9.x`: Node.js v6.9.5
-* `v6.7.x`: Node.js v6.7.0
-* `v6.4.x`: Node.js v6.4.0
-* `v6.3.x`: Node.js v6.3.1
-* `v6.2.x`: Node.js v6.2.2
-* `v6.1.x`: Node.js v6.1.0
-* `v4.6.x`: Node.js v4.6.2
-* `v4.5.x`: Node.js v4.5.0
-* `v4.4.x`: Node.js v4.4.7
-* `v4.3.x`: Node.js v4.3.2
-* `v4.2.x`: Node.js v4.2.6
-* `v0.12.x`: Node.js v0.12.18
-* `v0.10.x`: Node.js v0.10.48
-
-## Tests
-
-Tests are run as part of the `Dockerfile` build. To execute them separately within a container, run:
-
-    bats test
-
-## Deployment
-
-To push the Docker image to Quay, run the following command:
-
-    make release
+This image is deprecated. Please use the [Official Docker Node image](https://hub.docker.com/_/node/) instead.
 
 ## Copyright and License
 
